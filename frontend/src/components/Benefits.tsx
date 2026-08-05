@@ -27,7 +27,7 @@ export default function Benefits() {
           <h2 className="font-display text-3xl text-gold-soft md:text-3xl">
             Quando cada pessoa ocupa a função compatível com seu potencial natural, toda a empresa evolui.
           </h2>
-          <p className="pt-4 text-sm md:text-base font-light max-w-lg">A ETPI ajuda líderes e empresas a tomar decisões mais inteligentes sobre pessoas, reduzindo erros e aumentando resultados.</p>
+          <p className="pt-6 text-sm font-light max-w-md">A ETPI ajuda líderes e empresas a tomar decisões mais inteligentes sobre pessoas, reduzindo erros e aumentando resultados.</p>
         </div>
         <div className="grid sm:grid-cols-2 gap-x-10 gap-y-10">
           {beneficios.map((b) => (
