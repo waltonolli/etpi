@@ -6,13 +6,13 @@ interface HeroProps {
 
 export default function Hero({ onCtaClick }: HeroProps) {
   return (
-    <section id="top" className="relative overflow-hidden pt-20 pb-10 ">
+    <section id="top" className="relative overflow-hidden pt-section-lg pb-section-sm ">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
         <div className="relative z-10">
-          <span className="pt-7 mb:pt-0 inline-block font-mono text-xs tracking-widest uppercase text-rust mb-5">
+          <span className="pt-7 md:pt-0 inline-block font-mono text-xs tracking-widest uppercase text-rust mb-5">
             25 anos de metodologia científica
           </span>
-          <h1 className="font-display text-4xl md:text-3xl lg:text-[2.4rem] leading-[1.08] font-semibold text-ink text-balance">
+          <h1 className="text-ink ">
             Coloque cada pessoa na{" "}
             <span className="italic text-gold">função</span>{" "}
             em que seu{" "}

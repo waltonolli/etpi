@@ -41,7 +41,7 @@ export default function LeadForm({ planoSelecionado }: LeadFormProps) {
   if (status === "sucesso") {
     return (
       <div className="rounded-2xl bg-rust/10 border border-rust/30 p-8 text-center">
-        <h3 className="font-display text-2xl font-medium text-ink mb-2">Recebemos seu pedido!</h3>
+        <h3 className="text-ink mb-2">Recebemos seu pedido!</h3>
         <p className="text-ink-soft">
           Nosso time entra em contato em até 1 dia útil para agendar a demonstração.
         </p>

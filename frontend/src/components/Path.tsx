@@ -98,19 +98,20 @@ function spanDaBarra(cobertura: number) {
 
 export default function Path() {
   return (
-    <section id="jornada" className="bg-ink text-parchment py-10 mb:py-20">
-      <div className="px-8 max-w-4xl mx-auto mb-6">
-        <h2 className="mb-2 mb:mb-8 font-display text-2xl md:text-4xl font-semibold text-gold-soft text-balance">
+    <section id="jornada" className="bg-ink-deep text-parchment py-section">
+      <div className="max-w-4xl mx-auto">
+      <div className="px-8 mb-6">
+        <h2 className="mb-2 md:mb-4 text-gold-soft text-balance">
           Uma metodologia para toda a jornada do colaborador
         </h2>
-        <p className="font-body text-lg font-light text-parchment/60 text-balance">
+        <p className="font-body max-w-lg font-light text-parchment/80 text-balance">
           Da seleção ao desenvolvimento das lideranças.
         </p>
       </div>
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="px-6">
         {/* Painel de contorno: título, jornada e cobertura moram na MESMA
             grade, então a coluna 2 é literalmente a mesma para todos. */}
-        <div className="rounded-2xl pl-7 pr-6 py-10 md:px-12 md:py-14 bg-white/[0.05]border border-x-white/10 border-b-white/10 border-t-white/25 shadow-[0_30px_60px_-20px_rgb(0_0_0/0.55),inset_0_1px_0_rgb(255_255_255/0.1)]">
+        <div className="rounded-2xl pl-7 pr-6 py-10 md:px-12 md:py-14 bg-white/5 border-x-white/10 border-b-white/10 border-t-white/25 shadow-[0_30px_60px_-20px_rgb(0_0_0/0.55),inset_0_1px_0_rgb(255_255_255/0.1)]">
           <div className="md:grid md:grid-cols-[13rem_1fr] md:gap-x-2">
             {/* ── Cabeçalho ────────────────────────────────────────── */}
 
@@ -166,13 +167,13 @@ export default function Path() {
             {planos.map(({ nome, cobertura }) => (
               <div key={nome} className="group contents">
                 <div className="md:col-start-1 mb-2 md:mb-6 md:self-center">
-                  <h3 className="font-display text-lg font-medium leading-tight">{nome}</h3>
+                  <h3 >{nome}</h3>
                   <p className="font-mono text-[11px] text-parchment/50 mt-0.5">
                     {etapas[0].titulo} → {etapas[cobertura - 1].titulo}
                   </p>
                 </div>
 
-                <div className="md:col-start- mb-8 md:mb-6 md:self-center grid grid-cols-12 items-center">
+                <div className="md:col-start-2 mb-8 md:mb-6 md:self-center grid grid-cols-12 items-center">
                   <div className="row-start-1 col-start-2 col-end-12 h-2.5 rounded-full bg-parchment/10" />
                   <div
                     className="row-start-1 h-2.5 rounded-full bg-gold opacity-90 transition-opacity group-hover:opacity-100"
@@ -184,6 +185,8 @@ export default function Path() {
           </div>
         </div>
       </div>
+      </div>
+
     </section>
   );
 }

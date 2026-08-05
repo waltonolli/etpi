@@ -31,10 +31,10 @@ const planos = [
 
 export default function Plans({ onSelectPlan }: PlansProps) {
   return (
-    <section id="planos" className="py-16 bg-white/50">
+    <section id="planos" className="py-section bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <div className="max-w-3xl  mb-14">
-          <h2 className="font-display text-3xl md:text-4xl font-semibold text-ink mb-3">
+          <h2 className="text-ink mb-3">
             A ETPI Acompanha a Evolução da Gestão de Pessoas na sua Empresa
           </h2>
           <p className="text-ink-soft">
@@ -52,7 +52,7 @@ export default function Plans({ onSelectPlan }: PlansProps) {
               }`}
             >
               <div>
-                <h3 className="font-display text-xl font-medium mb-2">{plano.nome}</h3>
+                <h3 className="mb-2">{plano.nome}</h3>
                 <p className={`text-xs md:text-sm mb-8 ${plano.destaque ? "text-parchment/70" : "text-ink-soft"}`}>
                   {plano.publico}
                 </p>

@@ -3,15 +3,19 @@
 @theme {
   --color-ink: #0f4568;
   --color-ink-soft: #597181;
+  --color-ink-deep: #0a3049;
   --color-parchment: #F6F6F6;
   --color-gold: #C68A3D;
   --color-gold-soft: #E0B87A;
-  --color-teal: #2F6F62;
   --color-rust: #855F03;
 
   --font-display: "Bricolage Grotesque", serif;
   --font-body: "Inter", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
+
+  --spacing-section-sm: 3.5rem;
+  --spacing-section: 5rem;
+  --spacing-section-lg: 7rem;
 }
 
 html {
@@ -32,4 +36,32 @@ html {
 :focus-visible {
   outline: 2px solid #C68A3D;
   outline-offset: 2px;
+}
+
+@layer base {
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 1.08;
+    text-wrap: balance;
+  }
+  @media (min-width: 48rem) { h1 { font-size: 3rem; } }
+  @media (min-width: 64rem) { h1 { font-size: 3.5rem; } }
+
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+  @media (min-width: 48rem) { h2 { font-size: 2.25rem; } }
+
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
 }
