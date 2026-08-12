@@ -21,7 +21,7 @@ const beneficios = [
 
 export default function Benefits() {
   return (
-    <section id="metodo" className="bg-ink text-parchment py-section-sm">
+    <section id="metodo" className="bg-ink text-parchment py-section">
       <div className="max-w-6xl mx-auto px-6">
         <div className="max-w-xl lg:max-w-3xl mb-14 ">
           <h2 className="text-parchment">
