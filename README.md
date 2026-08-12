@@ -7,7 +7,7 @@ Stack: **React + TypeScript** (frontend) · **FastAPI + SQLAlchemy + Alembic** (
 ```
 etpi-app/
 ├── docker-compose.yml     # sobe Postgres + Backend
-├── .env.example           # copie para .env e configure
+├── .env                   # configurado
 ├── backend/                # API FastAPI
 └── frontend/                # site em React (roda fora do Docker, via npm)
 ```
@@ -17,12 +17,12 @@ etpi-app/
 ### 1. Configurar variáveis de ambiente
 
 ```bash
-cp .env.example .env
+cp .env
 ```
 
 Abra o `.env` e, se quiser ativar as notificações de novo lead por WhatsApp e/ou
-e-mail, preencha as variáveis `TWILIO_*` e `SMTP_*` (veja instruções detalhadas
-dentro do próprio `.env.example`). As duas notificações são independentes:
+e-mail, preencha as variáveis `TWILIO_*` e `SMTP_*`.
+As duas notificações são independentes:
 você pode ativar só uma, as duas, ou nenhuma — se deixar em branco, o site
 funciona normalmente e os leads só não disparam a notificação correspondente.
 
@@ -51,7 +51,7 @@ O frontend roda fora do Docker, direto na sua máquina (mais rápido para desenv
 
 ```bash
 cd frontend
-cp .env.example .env
+cp .env
 npm install
 npm run dev
 ```

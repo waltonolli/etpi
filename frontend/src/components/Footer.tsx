@@ -7,7 +7,7 @@ export default function Footer() {
           <a href="mailto:contato@etpi.app.br" className="hover:text-parchment transition-colors">
             contato@etpi.app.br
           </a>
-          <a href="tel:+554730000000" className="hover:text-parchment transition-colors">
+          <a href="tel:+5547933852600" className="hover:text-parchment transition-colors">
             (47) 93385-2600
           </a>
         </div>

@@ -1,8 +1,8 @@
 const etapas = [
   {
     numero: "01",
-    titulo: "Identificação da Inteligência Natural",
-    texto: "Base Ativa, Emocional ou Racional.",
+    titulo: "Identificação da base de atuação",
+    texto: "Mapeamos como a pessoa naturalmente age, decide e se relaciona no dia a dia — a combinação única que define seu potencial.",
   },
   {
     numero: "02",
