@@ -17,7 +17,7 @@ etpi-app/
 ### 1. Configurar variáveis de ambiente
 
 ```bash
-cp .env
+cp .env.example .env
 ```
 
 Abra o `.env` e, se quiser ativar as notificações de novo lead por WhatsApp e/ou
@@ -51,7 +51,7 @@ O frontend roda fora do Docker, direto na sua máquina (mais rápido para desenv
 
 ```bash
 cd frontend
-cp .env
+cp .env.example .env
 npm install
 npm run dev
 ```

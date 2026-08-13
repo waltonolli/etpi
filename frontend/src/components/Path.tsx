@@ -4,7 +4,7 @@ interface IconeProps {
 
 /* ── Ícones da jornada ──────────────────────────────────────────────
    Glifos de linha, 24×24, herdando currentColor — mesma linguagem
-   gráfica do RadarMark. Substituem emojis, que renderizam de forma
+   gráfica do CompassMark. Substituem emojis, que renderizam de forma
    inconsistente entre sistemas e não aceitam a cor do tema.
    ──────────────────────────────────────────────────────────────── */
 

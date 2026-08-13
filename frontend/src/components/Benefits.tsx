@@ -1,4 +1,5 @@
-import RadarMark from "./RadarMark";
+import CompassMark from "./CompassMark";
+import Reveal from "./Reveal";
 
 const beneficios = [
   {
@@ -23,21 +24,21 @@ export default function Benefits() {
   return (
     <section id="metodo" className="bg-ink text-parchment py-section">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="max-w-xl lg:max-w-3xl mb-14 ">
+        <Reveal className="max-w-xl lg:max-w-3xl mb-14 ">
           <h2 className="text-parchment">
             Quando cada pessoa ocupa a função compatível com seu potencial natural, toda a empresa evolui.
           </h2>
           <p className="pt-6 max-w-lg font-light">A ETPI ajuda líderes e empresas a tomar decisões mais inteligentes sobre pessoas, reduzindo erros e aumentando resultados.</p>
-        </div>
+        </Reveal>
         <div className="grid sm:grid-cols-2 gap-10 lg:max-w-3xl lg:mx-auto">
-          {beneficios.map((b) => (
-            <div key={b.titulo} className="flex gap-4">
-              <RadarMark variant="mark" className="w-10 h-10 shrink-0 mt-1" />
+          {beneficios.map((b, i) => (
+            <Reveal key={b.titulo} delay={i * 90} className="flex gap-4">
+              <CompassMark variant="mark" className="w-10 h-10 shrink-0 mt-1" />
               <div>
                 <h3 className="mb-1.5">{b.titulo}</h3>
                 <p className="text-parchment/70 font-light leading-relaxed max-w-2xs">{b.texto}</p>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>
