@@ -12,7 +12,7 @@ const beneficios = [
   },
   {
     titulo: "Lideranças mais preparadas",
-    texto: "Desenvolva líderes que entendem como extrair o melhor de cada perfil.",
+    texto: "Desenvolva líderes que compreendem melhor o potencial inato de cada pessoa.",
   },
   {
     titulo: "Empresas mais produtivas",

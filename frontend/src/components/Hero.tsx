@@ -13,13 +13,11 @@ export default function Hero({ onCtaClick }: HeroProps) {
             className="hero-enter pt-7 md:pt-0 inline-block font-mono text-xs tracking-widest uppercase text-rust mb-5"
             style={{ animationDelay: "0ms" }}
           >
-            25 anos de metodologia científica
+            Mais de 25 anos de aprofundamento da natureza humana
           </span>
           <h1 className="hero-enter text-ink " style={{ animationDelay: "80ms" }}>
-            Coloque cada pessoa na{" "}
-            <span className="italic text-gold">função</span>{" "}
-            em que seu{" "}
-            <span className="italic text-gold">potencial natural</span>{" "}
+            Coloque cada pessoa onde seu{" "}
+            <span className="italic text-gold">potencial inato</span>{" "}
             gera mais resultados.
           </h1>
           <p

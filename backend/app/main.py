@@ -6,7 +6,7 @@ from app.routers import leads
 
 app = FastAPI(
     title="ETPI API",
-    description="API de captura e gestão de leads do site ETPI - Soluções para RH",
+    description="API de captura e gestão de leads do site ETPI",
     version="1.0.0",
 )
 
