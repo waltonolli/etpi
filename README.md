@@ -67,7 +67,7 @@ Site disponível em **http://localhost:5173**.
 
 ## Próximos passos sugeridos
 
-- [ ] Trocar os números de telefone/WhatsApp de exemplo pelos reais (`WhatsAppButton.tsx`, `Footer.tsx`, `.env`)
+- [x] Trocar os números de telefone/WhatsApp de exemplo pelos reais (`WhatsAppButton.tsx`, `Footer.tsx`, `.env`)
 - [ ] Adicionar depoimentos reais de clientes (prova social)
 - [ ] Criar um painel interno simples para visualizar/gerenciar os leads (`GET /api/leads` já existe)
 - [ ] Configurar deploy (ex: Postgres gerenciado + backend em container + frontend estático)
